@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://xmlns.jcp.org/jsf/passthrough">
+
+
+    <head>
+        <title>Bootswatch: United</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="css/bootstrap.css" media="screen"/>
+        <link rel="stylesheet" href="css/theme.css"/>
+
+
+    </head>
+    <body>
+
+
+        <div class="navbar navbar-fixed-top">
+            <div class="container">
+                <a href="../" class="navbar-brand">HTML5+JSF2.2</a>
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="nav-collapse collapse" id="navbar-main">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Themes <span class="caret"></span></a>
+                            <ul class="dropdown-menu" aria-labelledby="themes">
+                                <li><a tabindex="-1" href="../default/">Default</a></li>
+                                <li class="divider"></li>
+                                <li><a tabindex="-1" href="../amelia/">Amelia</a></li>
+                                <li><a tabindex="-1" href="../cerulean/">Cerulean</a></li>
+                                <li><a tabindex="-1" href="../cosmo/">Cosmo</a></li>
+                                <li><a tabindex="-1" href="../cyborg/">Cyborg</a></li>
+                                <li><a tabindex="-1" href="../flatly/">Flatly</a></li>
+                                <li><a tabindex="-1" href="../journal/">Journal</a></li>
+                                <li><a tabindex="-1" href="../readable/">Readable</a></li>
+                                <li><a tabindex="-1" href="../simplex/">Simplex</a></li>
+                                <li><a tabindex="-1" href="../slate/">Slate</a></li>
+                                <li><a tabindex="-1" href="../spacelab/">Spacelab</a></li>
+                                <li><a tabindex="-1" href="../superhero/">Superhero</a></li>
+                                <li><a tabindex="-1" href="../united/">United</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">Download <span class="caret"></span></a>
+                            <ul class="dropdown-menu" aria-labelledby="download">
+                                <li><a tabindex="-1" href="./bootstrap.min.css">bootstrap.min.css</a></li>
+                                <li><a tabindex="-1" href="./bootstrap.css">bootstrap.css</a></li>
+                                <li class="divider"></li>
+                                <li><a tabindex="-1" href="./variables.less">variables.less</a></li>
+                                <li><a tabindex="-1" href="./bootswatch.less">bootswatch.less</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../help/">Help</a>
+                        </li>
+                        <li>
+                            <a href="http://news.bootswatch.com">Blog</a>
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav pull-right">
+                        <li><a href="http://builtwithbootstrap.com/" target="_blank">Built With Bootstrap</a></li>
+                        <li><a href="https://wrapbootstrap.com/?ref=bsw" target="_blank">WrapBootstrap</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+
+            <br/><br/>
+            <br/><br/>
+
+
+
+            <div class="row-fluid">
+                <h:form class="form-horizontal">
+                    <fieldset>
+                        <div id="legend">
+                            <legend class="">Registration Form</legend>
+                        </div>
+
+                        <!-- Name -->
+                        <div class="control-group">
+                            <label class="control-label"  for="username"> Name</label>
+                            <div class="controls">
+                                <h:outputText id="username" value="#{demoBean.name}" p:placeholder="Enter Ur Name" class="input-xlarge"/>
+                            </div>
+                        </div>
+
+                        <!-- Card Number -->
+                        <div class="control-group">
+                            <label class="control-label" for="email">Password</label>
+                            <div class="controls">
+                                <h:outputText  id="email" value="#{demoBean.password}" p:placeholder="Enter Ur Password" class="input-xlarge"/>
+                            </div>
+                        </div>
+
+                        <!-- Expiry-->
+                        <div class="control-group">
+                            <label class="control-label" for="password"> Date of Birth</label>
+                            <div class="controls">
+                                <h:outputText p:type="date" id="dob" value="#{demoBean.dob}"  class="input-xlarge"/>
+                            </div>
+                        </div>
+
+                        <!-- CVV -->
+                        <div class="control-group">
+                            <label class="control-label"  for="password_confirm">Email</label>
+                            <div class="controls">
+                                <h:outputText  id="password_confirm" value="#{demoBean.email}" p:placeholder="Enter Ur Email" class="span2"/>
+                            </div>
+                        </div>
+
+                       
+
+                        <!-- Submit -->
+                        <div class="control-group">
+                            <div class="controls">
+                                <h:commandButton value="Back" action="index" class="btn btn-success"/>
+                            </div>
+                        </div>
+
+                    </fieldset>
+                </h:form>
+            </div>
+
+
+
+
+            <footer>
+                <br/><br/>
+                <div class="row">
+                    <div class="col-lg-12">
+
+                        <ul class="list-unstyled">
+                            <li class="pull-right"><a href="#top">Back to top</a></li>
+
+                        </ul>
+                        <p>Made by <a href="http://thomaspark.me">Thomas Park</a>. Contact him at <a href="mailto:hello@thomaspark.me">hello@thomaspark.me</a>.</p>
+                        <p>Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License v2.0</a>.</p>
+                        <p>Based on <a href="http://getbootstrap.com">Bootstrap</a>. Icons from <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a>. Web fonts from <a href="http://www.google.com/webfonts">Google</a>. Favicon by <a href="https://twitter.com/geraldhiller">Gerald Hiller</a>.</p>
+
+                    </div>
+                </div>
+
+            </footer>
+
+
+        </div>
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
+    </body>
+</html>
